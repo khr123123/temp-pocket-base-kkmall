@@ -21,4 +21,5 @@ COPY ./pb_data /pb/pb_data
 EXPOSE 8090
 
 # MUST listen on Back4App dynamic port
-CMD ["sh", "-c", "/pb/pocketbase serve --http=0.0.0.0:${PORT}"]
+CMD ["sh", "-c", "/pb/pocketbase serve --http=0.0.0.0:8090"]
+
